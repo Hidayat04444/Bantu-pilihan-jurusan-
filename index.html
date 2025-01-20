@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemilihan Jurusan & Kampus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Form Pemilihan Jurusan & Kampus</h1>
+    
+    <form id="form">
+        <div class="question">
+            <label for="name">Masukkan Nama Anda:</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="question">
+            <label for="field">Pilih Keterkaitan di Bidang Apa:</label>
+            <select id="field" required>
+                <option value="">Pilih Bidang</option>
+                <option value="Teknologi">Teknologi</option>
+                <option value="Sosial">Sosial</option>
+                <option value="Ekonomi">Ekonomi</option>
+                <option value="Kesehatan">Kesehatan</option>
+                <option value="Seni & Desain">Seni & Desain</option>
+                <option value="Hukum">Hukum</option>
+                <option value="Ilmu Alam">Ilmu Alam</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="location">Pilih Wilayah:</label>
+            <select id="location" required>
+                <option value="">Pilih Wilayah</option>
+                <option value="Sumatera">Sumatera</option>
+                <option value="Jawa">Jawa</option>
+                <option value="Bali">Bali</option>
+                <option value="Kalimantan">Kalimantan</option>
+                <option value="Sulawesi">Sulawesi</option>
+                <option value="Papua">Papua</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="questions">Jawab Pertanyaan Berikut untuk Mengetahui Pilihan Jurusan Anda:</label>
+            <textarea id="questions" rows="10" placeholder="Jelaskan minat dan bakat Anda, serta hal-hal yang paling Anda nikmati dalam kehidupan sehari-hari. Berikan jawaban yang lengkap..." required></textarea>
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Tentukan Pilihan Jurusan & Kampus</button>
+        </div>
+    </form>
+
+    <div id="result" style="display: none; margin-top: 20px; background-color: #f4f4f4; padding: 20px; border-radius: 5px;">
+        <h2>Rekomendasi Anda</h2>
+        <p id="recommended-jurusan"></p>
+        <p id="recommended-kampus"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+              </html>
